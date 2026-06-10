@@ -1,0 +1,78 @@
+.description {
+  background-color: whitesmoke;
+  padding: 20px 40px
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 40px;
+  background-color: olive;
+  color: white;
+}
+
+.navbar__logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 25px;
+  font-size: 15px;
+}
+
+.navbar__links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar__links a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  color: darkolivegreen;
+  background-color: whitesmoke;
+  padding: 20px 30px;
+  font-family: 
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  background-color: olive;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: left;
+  padding: 20px;
+  font-family: 'corbel';
+  font-size: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: slideIn 1s ease-in-out 1s;
+}
