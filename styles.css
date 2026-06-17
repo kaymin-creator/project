@@ -7,8 +7,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1px 40px;
-  background-color: olive;
-  color: white;
+  background: linear-gradient(180deg, rgb(168, 168, 10), olive);
+  color: whitesmoke;
 }
 
 .navbar__logo {
@@ -27,6 +27,7 @@
   text-decoration: none;
   font-weight: 500;
 }
+
 .navbar__links a:hover {
   text-decoration: underline;
 }
@@ -35,7 +36,7 @@
   color: darkolivegreen;
   background-color: whitesmoke;
   padding: 20px 30px;
-  font-family: 
+  font-family: Georgia;
 }
 
 .gallery {
@@ -44,7 +45,7 @@
   gap: 20px;
   justify-content: center;
   padding: 40px;
-  background-color: olive;
+  background: linear-gradient(180deg, olive, darkolivegreen);
 }
 
 .card {
@@ -58,6 +59,18 @@
   font-size: 15px;
 }
 
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+} 
+
+.card h2:hover {
+  text-decoration: underline;
+}
+
 .card img {
   width: 100%;
   border-radius: 2px;
@@ -66,10 +79,12 @@
 
 @keyframes slideIn {
   from {
-    transform: translateY(-50);
+    transform: translateY(-50px);
+    opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
